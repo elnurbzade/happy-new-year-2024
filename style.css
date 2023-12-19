@@ -1,0 +1,183 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(39, 39, 39);
+}
+
+h2 {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: gray;
+  position: relative;
+  cursor: pointer;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  width: 260px;
+  height: 2px;
+  background: red;
+  transition: transform 0.5s;
+  transform-origin: left;
+  box-shadow: 10px 5px 10px red;
+}
+
+h2:hover::before {
+  transform-origin: left;
+  transform: scale(0);
+}
+
+span:nth-child(1) {
+  color: red;
+  text-shadow: 1px 1px 10px red;
+  position: absolute;
+}
+
+span:nth-child(2) {
+  color: green;
+  text-shadow: 1px 1px 10px green;
+  position: absolute;
+  top: -30px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+h2:hover :nth-child(1) {
+    opacity: 0;
+}
+
+h2:hover :nth-child(2) {
+    
+    top:0;
+    opacity: 1;
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39, 39, 39);
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .hoverable {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: gray;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hoverable::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    width: 260px;
+    height: 2px;
+    background: red;
+    transition: transform 0.5s;
+    transform-origin: left;
+    box-shadow: 10px 5px 10px red;
+  }
+  
+  .hoverable:hover::before {
+    transform-origin: left;
+    transform: scale(0);
+  }
+  
+  .year {
+    color: red;
+    text-shadow: 1px 1px 10px red;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .hoverable:hover .year {
+    opacity: 0;
+    content: "3"; /* Change content to "3" when hovering over the text */
+    */
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: monospace;
+    }
+    
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgb(39, 39, 39);
+    }
+    
+    .center {
+      text-align: center;
+    }
+    
+    .hoverable {
+      font-size: 30px;
+      letter-spacing: 13.6px;
+      color: gray;
+      position: relative;
+      cursor: pointer;
+    }
+    
+    .hoverable::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      width: 530px;
+      height: 2px;
+      background: red;
+      transition: transform 2.5s;
+      transform-origin: left;
+      box-shadow: 10px 5px 10px red;
+      opacity: 0;
+  
+      .hoverable:hover .year {
+          opacity: 0;
+          content: "3"; /* Change content to "3" when hovering over the text */
+        }
+    }
+    
+    .hoverable:hover::before {
+      transform-origin: left;
+      transform: scale(1);
+      opacity: 1;
+    
+    }  
+    .year {
+      color: green;
+      text-shadow: 1px 1px 5px red;
+      transition: all 29.5s ease-in-out;
+    }
+  .hoverable:hover .year {
+          opacity: 0;
+          content: "3"; /* Change content to "3" when hovering over the text */
+        }  
